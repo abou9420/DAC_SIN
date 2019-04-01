@@ -1,0 +1,15 @@
+--cpu Cortex-M3
+".\objects\main.o"
+".\objects\lpc17xx_dac.o"
+".\objects\lpc17xx_gpio.o"
+".\objects\lpc17xx_nvic.o"
+".\objects\lpc17xx_pinsel.o"
+".\objects\lpc17xx_timer.o"
+".\objects\lpc17xx_clkpwr.o"
+".\objects\lpc17xx_libcfg_default.o"
+".\objects\lpc17xx_rit.o"
+".\objects\startup_lpc17xx.o"
+".\objects\system_lpc17xx.o"
+--ro-base 0x00000000 --entry 0x00000000 --rw-base 0x10000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\DAC_tesr.map" -o .\Objects\DAC_tesr.axf
